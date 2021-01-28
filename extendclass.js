@@ -1,23 +1,24 @@
-// Parent class
-class Media{
-    constructor(info){
+//Parent class
+class Media {
+    constructor(info) {
         this.publishDate = info.publishDate;
-        this.name = info.name;
+        this.name=info.name;
     }
 }
 
-// Child class
-class Song extends Media{
+//Child class
+class Song extends Media {
     constructor(songData){
         super(songData);
         this.artist = songData.artist;
     }
 }
 
-const mySong = new Song({
+const mySong= new Song({
     artist : "Queen",
-    name : "Bohemian Rhapsody",
+    name : "Bohiemian Rhapsody",
     publishDate : 1975,
+    //Price : "35 USD",
 });
 
 console.log(mySong);
